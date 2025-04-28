@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "title": "A Mother’s Love",
+      "excerpt": "A heartfelt tribute to my mom’s endless sacrifices.",
+      "content": "Full story about my mom’s journey and love. She always put her family first, sacrificing her own dreams to ensure we had everything we needed. Her strength and compassion inspire me every day.",
+      "author": "Jane Doe",
+      "date": "2025-04-20",
+      "category": "Stories",
+      "readingTime": "5 min",
+      "imageUrl": "https://picsum.photos/300/200?random=1"
+    },
+    {
+      "id": 2,
+      "title": "Healthy Habits for Moms",
+      "excerpt": "Tips for mothers to stay healthy and energized.",
+      "content": "Detailed guide on health tips for moms. From balanced diets to quick workouts, this article covers practical ways for busy moms to prioritize their well-being.",
+      "author": "John Smith",
+      "date": "2025-04-18",
+      "category": "Health",
+      "readingTime": "3 min",
+      "imageUrl": "https://picsum.photos/300/200?random=2"
+    },
+    {
+      "id": 3,
+      "title": "Inspiring Moms",
+      "excerpt": "Stories of mothers who changed the world.",
+      "content": "In-depth look at inspiring mothers who made a difference. From historical figures to modern heroes, their stories motivate us all.",
+      "author": "Emily Brown",
+      "date": "2025-04-15",
+      "category": "Inspiration",
+      "readingTime": "4 min",
+      "imageUrl": "https://picsum.photos/300/200?random=3"
+    }
+  ]
