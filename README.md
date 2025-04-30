@@ -61,25 +61,7 @@ Follow these steps to run the project locally:
    ```bash
    npm run build
    npm run start
-
-# Folder Structure
-
-mothers-day-tribute-blog/
-├── app/                    # Next.js app directory for pages and components
-│   ├── articles/           # Dynamic route for story detail pages
-│   │   └── [slug]/page.jsx
-│   ├── inspiring-moms/     # Static page for Inspiring Moms story
-│   │   └── page.jsx
-│   ├── layout.jsx          # Root layout for the app
-│   ├── page.jsx            # Homepage (Home.jsx)
-│   └── globals.css         # Global styles
-├── data/                   # Local data storage
-│   └── articles.json       # JSON file containing article data
-├── public/                 # Static assets
-│   └── images/             # Placeholder images
-├── README.md               # Project documentation
-├── package.json            # Dependencies and scripts
-└── tailwind.config.js      # Tailwind CSS configuration
+   
 
 # Live Deployment
 
