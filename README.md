@@ -1,54 +1,202 @@
-# Personal Travel Blog
+Mother's Day Tribute Blog
 
-This is a Next.js project bootstrapped with `create-next-app`, designed as a personal travel blog with a custom homepage layout. The project features a responsive design with a story box, category section, and navigation elements, all aligned according to specific design instructions.
+Project Overview
 
-## Features
-- **Homepage Layout**: Includes a header with a 3-bar menu icon, search icon, and centered title ("Personal Travel Blog"), a story box aligned with the 3-bar menu icon, and an "Explore by Category" section with 6 customizable cubes.
-- **Category Section**: Displays 6 cubes (180x180px) with 16px gaps, scrollable via left and right arrows, with the 6th cube's right edge aligned vertically with the right arrow.
-- **Story Box**: Positioned at the bottom of the header image, with its left edge aligned with the 3-bar menu icon, containing a title, excerpt, and "READ MORE" button.
-- **Responsive Design**: Centered content with equal 80px margins on both sides.
+This project is a Mother’s Day Tribute Blog built using Next.js, designed to showcase stories celebrating mothers. It replicates the UI from a provided Figma design and includes features like a homepage with a carousel, category filtering, recent articles, a sidebar, and dynamic story detail pages. The goal was to create a responsive, user-friendly frontend application with clean code and modular structure, focusing on UI fidelity, functionality, and responsiveness across devices.
 
-## Getting Started
+The project uses a local JSON file for article data, implements client-side search and category filtering, and ensures a seamless user experience with a working carousel and dynamic routing.
 
-First, run the development server:
+Features Implemented
 
-```bash
+
+
+
+
+Home Page (/):
+
+
+
+
+
+Hero Section: A carousel displaying 3 featured tribute stories with navigation arrows (next/previous).
+
+
+
+Explore by Category Section: Cards for categories (Stories, Health, Inspiration) with a horizontal scroll and navigation arrows. Clicking a category filters the Recent Articles section.
+
+
+
+Recent Articles Section: Cards displaying article image placeholders, title, excerpt, reading time, and category tag, with a "Read More" button linking to individual story pages.
+
+
+
+Sidebar: Static content including an Author Profile and Destinations/Highlights section.
+
+
+
+Story Detail Page (/articles/:id):
+
+
+
+
+
+Dynamic routing to display full article content, including title, author name, submission date, category, reading time, and a placeholder image.
+
+
+
+Search Functionality:
+
+
+
+
+
+A search bar on the homepage that filters articles by title or excerpt (client-side search).
+
+
+
+Category Filter:
+
+
+
+
+
+Clicking a category card filters the articles dynamically in the Recent Articles section.
+
+
+
+Responsiveness:
+
+
+
+
+
+Fully responsive design for desktop, tablet, and mobile devices using Tailwind CSS.
+
+
+
+Data Handling:
+
+
+
+
+
+Articles are stored in a local articles.json file, containing ID, title, excerpt, full content, author name, submission date, category, reading time, and image URL (placeholders).
+
+
+
+Additional Features:
+
+
+
+
+
+Pagination in the Recent Articles section.
+
+
+
+Smooth transitions for the carousel and category filter.
+
+Setup Instructions
+
+Follow these steps to run the project locally:
+
+
+
+
+
+Clone the Repository:
+git clone https://github.com/your-username/mothers-day-tribute-blog.git
+cd mothers-day-tribute-blog
+
+Install Dependencies: Ensure you have Node.js installed. Then, install the required packages:
+npm install
+
+Run the Development Server: Start the Next.js development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Open your browser and navigate to http://localhost:3000 to view the app.
 
-Open http://localhost:3000 with your browser to see the result.
+Build for Production (Optional): To create a production build:
+npm run build
+npm run start
 
-You can start editing the page by modifying app/page.js. The page auto-updates as you edit the file.
+Folder Structure
+mothers-day-tribute-blog/
+├── app/                    # Next.js app directory for pages and components
+│   ├── articles/           # Dynamic route for story detail pages
+│   │   └── [slug]/page.jsx
+│   ├── inspiring-moms/     # Static page for Inspiring Moms story
+│   │   └── page.jsx
+│   ├── layout.jsx          # Root layout for the app
+│   ├── page.jsx            # Homepage (Home.jsx)
+│   └── globals.css         # Global styles
+├── data/                   # Local data storage
+│   └── articles.json       # JSON file containing article data
+├── public/                 # Static assets
+│   └── images/             # Placeholder images
+├── README.md               # Project documentation
+├── package.json            # Dependencies and scripts
+└── tailwind.config.js      # Tailwind CSS configuration
 
-This project uses next/font to automatically optimize and load Geist, a new font family for Vercel.
+Live Deployment
 
-Project Structure
-app/page.js: Contains the main React component with the homepage layout.
-data/articles.json: Stores sample article data used for the story box.
-Deployment
-This project has been successfully deployed on Vercel. You can view the live site at https://your-vercel-url.com (replace with your actual Vercel URL).
+https://mothersday-rg78jcq7w-nipun1509s-projects.vercel.app/
 
-Learn More
-To learn more about Next.js, take a look at the following resources:
+Technologies Used
 
-Next.js Documentation - Learn about Next.js features and API.
-Learn Next.js - An interactive Next.js tutorial.
-You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
 
-Deploy on Vercel
-The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
 
-Check out our Next.js deployment documentation for more details.
 
-- Save the file as `README.md` in the project root.
 
-### Notes
-- Replace `https://your-vercel-url.com` with the actual URL of your deployed Vercel site.
-- The README reflects the completed project based on your instructions, including the specific alignment of the story box with the 3-bar menu icon and the category section details.
+Next.js: Framework for server-side rendering and routing.
 
-Reply with “Looks good” or list mismatches (e.g., “URL missing”).
+
+
+React: For building UI components.
+
+
+
+Tailwind CSS: For responsive styling.
+
+
+
+JavaScript (ES6+): For logic and state management.
+
+
+
+Local JSON: For article data storage.
+
+Notes
+
+
+
+
+
+The project avoids hydration errors by using isMounted checks for client-side rendering of dynamic components like the carousel and search bar.
+
+
+
+The carousel in the Hero Section uses basic state management with useState for next/previous navigation.
+
+
+
+The search and category filter are implemented client-side using JavaScript array filtering.
+
+
+
+Placeholder images are used due to the absence of real image URLs; replace them with actual images as needed.
+
+Future Improvements
+
+
+
+
+
+Add a theme toggle (light/dark mode).
+
+
+
+Implement a backend API for dynamic article fetching.
+
+
+
+Enhance the search functionality with more advanced filtering (e.g., by category or date).
