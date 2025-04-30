@@ -6,6 +6,9 @@ This project is a Mother’s Day Tribute Blog built using Next.js, designed to s
 
 The project uses a local JSON file for article data, implements client-side search and category filtering, and ensures a seamless user experience with a working carousel and dynamic routing.
 
+![image](https://github.com/user-attachments/assets/bd57301c-4291-4ca7-854c-0f6ec0dec2f0)
+
+
 ## Features Implemented
 
 ### Home Page (`/`)
