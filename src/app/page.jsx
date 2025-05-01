@@ -83,7 +83,7 @@ export default function Home() {
             ≡
           </button>
           <h1 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "32px", fontWeight: "700", margin: "0", color: "#000" }}>
-            Mother's Day Blog
+            Mother's Day Tribute
           </h1>
           <button
             onClick={() => setIsSearchOpen(!isSearchOpen)}
